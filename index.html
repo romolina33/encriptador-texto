@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="rocio molina">
+  <meta name="description" content="encriptador de texto">
+  <meta name="keywords" content="encriptador, html, css, javascript">
+  <link rel="icon" href="img/logo.svg">
+  <link rel="stylesheet" href="/css/style.css">
+  <link href="https://fonts.cdnfonts.com/css/w95fa" rel="stylesheet">
+  <title>Encripator texto</title>
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="img/logo.png" alt="">
+    </header>
+    <main>
+        <section class="main__container">
+            <div class="barra">
+                <img  class="icon" src="img/notepad-32x32.png" alt="">
+                <h2 class="barra__texto">Encriptador de texto</h2>
+            </div>
+            <textarea class="text__tarea" name="" id="" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+            <div class="informacion__container">
+                <img class="icon" src="img/info-32x32-8bpp.png" alt="">
+                <h6 class="informacion">Solo letras minusculas y sin acentos</h6>
+            </div>
+            <div class="botones">
+                <button class="btn__encriptador">
+                    <img  class="icon" src="img/print.bmp" alt="">
+                    Encriptar</button>
+                <button class="btn__desencriptador">
+                    <img class="icon" src="img/unknown-printer-32x32.png" alt="">
+                    Desencriptar</button>
+            </div>
+        </section>
+        <section class="mensaje__container">
+            <div class="barra">
+                <img class="icon" src="img/doc-32x32.png" alt="">
+                <h2 class="barra__texto">Texto Encriptado</h2>
+            </div>
+            <textarea class="mensaje" name="" id="" cols="30" rows="10" style="display:none;"></textarea>
+            <img class="error" src="img/error.ico" alt="">
+            <h3 class="error__texto">Ningun mensaje fue encontrado</h3>
+            <p class= "error__texto">Ingrese el texto que deseas encriptar o desencriptar</p>
+            <div class="botones">
+                <button class="copiar" style="display:none;">
+                    <img class="icon" src="img/copy.bmp" alt="">Copiar
+                </button>
+            </div>   
+        </section>
+    </main>
+    <div class="alert" id="alert" style="display:none">
+        <img class="error__alert" src="img/error.ico" alt="">
+        <p>Solo se permiten letras minúsculas sin acentos</p>
+    </div>
+    <script src="javascript.js" ></script>
+</body>

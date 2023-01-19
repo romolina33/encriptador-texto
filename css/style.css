@@ -1,0 +1,277 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::selection {
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 128);
+}
+
+body {
+    font-family: 'W95FA', sans-serif; 
+    background-color: #308887;   
+    display: flex;
+    flex-direction: column;                                   
+}
+
+header {
+    margin-left: 30px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.logo {
+    width: 8%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+}
+
+textarea,
+button {
+    font-family: 'W95FA', sans-serif; 
+}
+
+.main__container,
+.mensaje__container {
+    display: flex;
+    flex-direction: column;
+    background: silver;
+    box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #dfdfdf, inset -2px -2px grey, inset 2px 2px #fff;
+    padding: 3px;
+    width: 90%;
+    margin: 10px;
+    height: 250px;
+}
+
+.barra {
+    background: linear-gradient(90deg,navy,#1084d0);
+    padding: 3px 2px 3px 3px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.barra__texto {
+    color: white;
+    font-size: 14px;
+}
+
+.informacion__container {
+    display: flex;
+    flex-direction: row;
+    margin-left: 5px;
+    align-items: center;
+    padding-top: 3px;
+}
+
+.icon {
+    width: 15px;
+    margin-right: 2px;
+}
+
+textarea {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    text-transform: lowercase;
+    border: 0;
+    font-size: 16px;
+    background-color: rgb(255, 255, 255);
+    padding: 7px;
+    box-shadow: inset -1px -1px #fff, inset 1px 1px grey, inset -2px -2px #dfdfdf, inset 2px 2px #0a0a0a;
+}
+
+.textarea::placeholder {
+    color: #dfdfdf;
+}
+
+textarea:focus {
+    outline: none;
+    border: none;
+}
+
+.botones {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    height: 28px;
+    margin: 4px;
+    padding: 4px;
+    background: silver;
+    box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #fff, inset -2px -2px grey, inset 2px 2px #dfdfdf;  
+}
+
+.btn__encriptador {
+    outline: 1px dotted #000000;
+    outline-offset: -4px;
+}
+
+button:hover {
+    transform: scaleX(1.01);
+}
+
+button:active {
+    box-shadow: inset -1px -1px #ffffff, inset 1px 1px #0a0a0a, inset -2px -2px #dfdfdf, inset 2px 2px #808080;
+}
+
+.error {
+    padding-top: 6px;
+    width: 120px;
+    margin: auto;
+}
+
+.error__texto {
+    text-align: center;
+    margin: 5px;
+}
+
+.alert {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); 
+        z-index: 100;
+        background-color: red;
+        font-size: 30px;
+        padding: 20px;
+        text-align: center;
+        box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #fff, inset -2px -2px grey, inset 2px 2px #dfdfdf;  
+}
+
+.error__alert {
+    width: 50px;
+}
+
+.blur {
+    filter: blur(5px);
+    z-index: 10;
+}
+
+@media (min-width: 768px) {
+    .logo {
+        margin-left: 84px;
+    }
+    .botones {
+        flex-direction: row;
+    }
+
+    .btn__encriptador,
+    .btn__desencriptador{
+        width: 50%;
+    }
+
+    .copiar {
+        width: 100%;
+    }
+
+    .main__container,
+    .mensaje__container {
+        width: 70%;
+        height: 400px;
+    }
+
+    .mensaje,
+    .text__tarea {
+        height: 318px;
+    }
+
+    .barra__texto {
+        font-size: 20px;
+    }
+
+    .text__tarea,
+    .mensaje {
+        font-size: 24px;
+    }
+
+    .informacion {
+        font-size: 18px;
+    }
+
+    .btn__encriptador,
+    .btn__desencriptador,
+    .copiar {
+        font-size: 20px;
+        padding: 1em;
+    }
+
+    .error__texto {
+        font-size: 24px;
+    }
+
+    .error {
+        width: 220px;
+    }
+
+    .icon {
+        width: 22px;
+    }
+}  
+
+@media (min-width: 1024px) {
+    main {
+        flex-direction: row;
+        justify-content: center;
+        margin: 0 100px;
+    }
+
+    .barra__texto {
+        font-size: 24px;
+    }
+
+    .text__tarea,
+    .mensaje {
+        font-size: 36px;
+    }
+
+    .informacion {
+        font-size: 24px;
+    }
+
+    .btn__encriptador,
+    .btn__desencriptador,
+    .copiar {
+        font-size: 30px;
+        padding: 1em;
+    }
+
+    .logo {
+        margin-left: 125px;
+        width: 90px;
+    }
+
+    .icon {
+        width: 30px;
+    }
+
+    .main__container {
+        width: 60%;
+        height: 570px;
+    }
+
+    .mensaje__container {
+        width: 30%;
+        height: 570px;
+    }
+
+    .mensaje,
+    .text__tarea {
+        height: 460px;
+    }
+
+}  
