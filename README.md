@@ -1,4 +1,5 @@
 🔡Encriptador Texto - Alura. https://encriptador-texto-rm.netlify.app/ 
+![enc](https://user-images.githubusercontent.com/112089414/213496751-61c22774-e5fb-4a36-bfa5-a9d58af05662.png)
 
 📝Requisitos del Challenge One
 🔑Las "llaves" de encriptación que utilizaremos son las siguientes:
